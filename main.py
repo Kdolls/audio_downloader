@@ -14,8 +14,8 @@ def downloader():
                 video_url = pytube.YouTube(user_input)
                 audio_url = video_url.streams.filter(only_audio=True).first()
 
-                # file download name
-                audio_file = audio_url.download('sample.mp3')
+                # download folder
+                audio_file = audio_url.download('audio stuff')
                 print('download successful!!')
                 break
         except ValueError:
@@ -23,4 +23,5 @@ def downloader():
 
 
 if __name__ == '__main__':
-    downloader()
+    while True:
+        downloader()
