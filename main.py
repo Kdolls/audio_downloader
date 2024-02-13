@@ -1,12 +1,13 @@
 import pytube
 import os
+import
 
 def downloader():
     """
     Takes user's video url input, extracts audio and downloads to main file.
     -user_input(str)
     """
-    user_input = input(f'enter url: ')
+    user_input = input('enter url: ')
 
     while True:
         try:
